@@ -14,7 +14,7 @@ class RepositoriesController < ApplicationController
    if @resp.success?
     @venues = body['items']
    else
-    @error = body["meta"]["errorDetail"]
+    @error = "error"
    end
    render 'search'
  end
